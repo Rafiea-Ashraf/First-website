@@ -1,0 +1,119 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Navigation styling */
+nav {
+    float: left;
+    width: 30%;
+    background: #444;
+    padding: 20px;
+    height: 100vh; /* Adjusted height to cover the full viewport */
+    overflow-y: auto; /* Enable scrolling for small screens */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Featured Section styling */
+article {
+    float: left;
+    width: 65%;
+    padding: 20px;
+    background-color: #f1f1f1;
+    min-height: 100vh; /* Adjusted height to cover the full viewport */
+}
+
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    nav, article {
+        width: 100%;
+        float: none;
+    }
+}
+
+/* Featured Section Enhancements */
+.featured-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.featured-section h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Sidebar Styling */
+.sidebar-left {
+    float: left;
+    width: 25%; /* Adjust the width of the sidebar */
+    background-color: #f4f4f4; /* Set the background color of the sidebar */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content-right {
+    float: right;
+    width: 75%; /* Adjust the width of the content area */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Clear floats after the sidebar and content */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 600px) {
+    nav, article, .sidebar {
+        width: 100%;
+        float: none;
+    }
+}
